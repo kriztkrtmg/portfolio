@@ -1,0 +1,9 @@
+.weather{
+    height: 400px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.weather_mode{
+    background-color: #111;
+}

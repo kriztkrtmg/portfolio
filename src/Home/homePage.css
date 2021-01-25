@@ -1,0 +1,142 @@
+
+/*--Main body container----*/
+
+.first_row{
+    background-color: #fff;
+    color: #000;
+    background-image: url("../stains-light-dark-background-wallpaper.jpg");
+    width: 100%;
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+}
+  
+.first_row_mode{
+    background-color: #111;
+    color: #fff;
+}
+
+
+.contain_body{
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+
+/*--Right Grid Part-----*/
+.description_content{
+    padding-top: 80px;
+}
+
+.description_title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.description_paragraph{
+    padding-top: 10px;
+    line-height: 1.4;
+    max-height: 150px;
+    font-size: 0.9rem;
+    max-width: 400px;
+    overflow-y: scroll; 
+}
+
+.description_paragraph::-webkit-scrollbar{
+    display: none;
+}
+
+/*---Left Grid Part---*/
+.my_profile{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    transition-timing-function: ease-in;
+    transition: transform 500ms;
+}
+
+.my_photo{
+    background-image: url("/src/profile_picture.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 50%;
+    transition: transform 500ms;
+}
+
+.my_photo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.my_data{
+    padding-top: 20px;
+}
+
+/*----Social Icons---*/
+.social_contact{
+    width: 50%;
+    padding-top: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.social_contact>a{
+    color: #000;
+}
+
+.social_contact_mode>a{
+    color: #fff;
+}
+
+.social_icon:hover{
+    cursor: pointer;
+    transition: all 0.5s;
+    transform: scale(1.5);
+    color: #fff;
+}
+
+.social_icon_mode:hover{
+    cursor: pointer;
+    transition: all 0.5s;
+    transform: scale(1.5);
+    color: #000;
+}
+
+
+/*---Styling Fading Body Container-----*/
+.content_body_fadeBottom {
+    height: 105px;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(218, 218, 218, 0.61),
+        #fff
+        
+    );
+}
+
+.content_body_fadeBottom_mode {
+    height: 105px;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        #111
+    );
+}
+
+.hello{
+    height: 400px;
+    background-color: #f9fafb;
+}

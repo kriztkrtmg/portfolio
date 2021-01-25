@@ -1,0 +1,11 @@
+.search__bar {
+    padding-top: 80px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.textSearch{
+    width: 400px;
+}
