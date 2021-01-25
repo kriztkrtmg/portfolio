@@ -43,14 +43,13 @@ function BodyContainer({theme, mode}) {
                     <div className='description_title'>About</div>
                     <div className='description_paragraph'>
                         <p>
-                            I did my graduation in BE.Computer from Kantipur Engineering College.
+                             I did my graduation in BE.Computer from Kantipur Engineering College.
                             Besides my formal education, I have good and basic knowledge in HTML, CSS, BootStrap, GIT and GitHub,
                             Javascript, ReactJs, Material-UI and Python. I want to learn more and grow my skills so that
                             I can also be relied upon to help the company to achieve its goal.
-                            <br/><br/>
+                            <br/>
                             I am currently pursuing my career in frontEnd Developer.
-                            <br/><br/>
-                            This webpage is build by implementing ReactJs(mostly including functional Component and Hooks), Material-UI and CSS.
+                            This webpage is build by implementing ReactJs (mostly including functional Component and Hooks), Material-UI and CSS.
                         </p>
                     </div>
                 </Grid>
