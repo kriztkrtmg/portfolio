@@ -32,13 +32,6 @@
     padding-right: 10px;
 }
 
-.description_title{
-    padding-left: 5px;
-    font-size: 1.5rem;
-    font-weight: 800;
-    padding-bottom: 0.3rem;
-}
-
 .description_paragraph{
     padding-left: 15px;
     padding-top: 10px;
@@ -141,9 +134,4 @@
         rgba(37, 37, 37, 0.61),
         #111
     );
-}
-
-.hello{
-    height: 400px;
-    background-color: #f9fafb;
 }

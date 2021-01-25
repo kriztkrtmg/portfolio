@@ -1,9 +1,41 @@
 .weather{
-    height: 400px;
+    width: 100%;
     text-align: center;
     background-color: #fff;
 }
 
 .weather_mode{
     background-color: #111;
+}
+
+.weather_details{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #000;
+    text-align: left;
+}
+
+.weather_details_mode{
+    color: #fff;
+}
+
+.weather_data{
+    padding-top: 30px;
+    color: #000;
+}
+
+.weather_data_mode{
+    color: #fff;
+}
+
+.weather_paragraph{
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: green;
 }

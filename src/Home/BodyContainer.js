@@ -4,6 +4,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 
 function BodyContainer({theme, mode}) {
     return (
@@ -12,9 +13,9 @@ function BodyContainer({theme, mode}) {
                 <Grid item xs={12} sm={6} className='my_profile'>
                     <div className='my_photo'></div>
                     <div className='my_data'>
-                        <h2>Christopher Thokar</h2>
-                        <p style={{fontSize:20, marginBottom:3}}>FrontEnd Developer</p>
-                        <p>Javascript, ReactJs, Python, Material-UI, CSS, BootStrap, GIT</p>
+                        <Typography variant="h4" gutterBottom>Christopher Thokar</Typography>
+                        <Typography variant="button" display="block" gutterBottom>Frontend Developer</Typography>
+                        <Typography variant="subtitle2" gutterBottom>Javascript, ReactJs, Python, Material-UI, CSS, BootStrap, GIT</Typography>
                         <div className={`social_contact ${mode && "social_contact_mode"}`}>
                             <a
                                 href="https://www.facebook.com/kriztkrtmg"
@@ -40,17 +41,16 @@ function BodyContainer({theme, mode}) {
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={6} className='description_content'>
-                    <div className='description_title'>About</div>
+                    <Typography variant="h4" gutterBottom>About</Typography>
                     <div className='description_paragraph'>
-                        <p>
-                             I did my graduation in BE.Computer from Kantipur Engineering College.
+                            I did my graduation in BE.Computer from Kantipur Engineering College.
                             Besides my formal education, I have good and basic knowledge in HTML, CSS, BootStrap, GIT and GitHub,
                             Javascript, ReactJs, Material-UI and Python. I want to learn more and grow my skills so that
                             I can also be relied upon to help the company to achieve its goal.
                             <br/>
                             I am currently pursuing my career in frontEnd Developer.
                             This webpage is build by implementing ReactJs (mostly including functional Component and Hooks), Material-UI and CSS.
-                        </p>
+                        
                     </div>
                 </Grid>
             </Grid>
