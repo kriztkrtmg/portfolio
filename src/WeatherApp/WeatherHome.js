@@ -33,8 +33,9 @@ function WeatherHome({ theme, mode }) {
     }
 
     const handleKeyDown = (event) => {
-        if (event.key === "Enter") {
-            getWeatherData();
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            handlebutton();
         }
     }
     return (

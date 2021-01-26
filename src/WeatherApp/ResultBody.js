@@ -6,22 +6,47 @@ function ResultBody({ data, mode }) {
     
     const [myTime, setmyTime] = useState();
     
+
     useEffect(() => {
         const interval = setInterval(() => {
-            setmyTime(new Date().toLocaleTimeString());
+            setmyTime(new Date().toUTCString());
+            
         }, 50)
         return () => {
             clearInterval(interval);
         }
     }, [])
     
+    /*
+    const [dynamicTime, setDynamicTime] = useState();
+    const dynamicTimeFunction = () => {
+        let secondOffset = data.timezone; //20700 seconds
 
+        let hour = Math.floor(secondOffset / 3600); //5 hour
+        let minute = Math.floor(secondOffset % 3600 / 60); //45 minute
+        let second = Math.floor(secondOffset % 3600 % 60); //0 second
+
+        let UTCsecond = new Date().getUTCSeconds();
+        let UTCminute = new Date().getUTCMinutes();
+        let UTChour = new Date().getUTCHours();
+
+        let newSecond = second + UTCsecond;
+        let newMinute = minute + UTCminute;
+        let newHour = hour + UTChour;
+
+
+        
+
+
+    }
+
+    */
     return (
         <React.Fragment>
             <div className={`result_box ${mode && "result_box_mode"}`}>
                     <div>
-                    <Typography variant="subtitle1">{new Date().toDateString()}, {myTime}</Typography>
-                        <Typography variant="h5" style={{ fontWeight: 700 }}>{data.name}, {data.sys.country}</Typography> 
+                    <Typography variant="subtitle1">{myTime}, {data.timezone}</Typography>
+                    <Typography variant="h5" style={{ fontWeight: 700 }}>{data.name}, {data.sys.country}</Typography> 
                     </div>  
                     <div>
                         <Typography variant="h4" style={{ paddingLeft: 20, paddingTop: 20, margin: 10 }}>{data.main.temp}°C</Typography>
