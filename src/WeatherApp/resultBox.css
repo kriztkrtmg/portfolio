@@ -1,0 +1,13 @@
+
+.result_box{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+.result_box_mode{
+    background-color: #111;
+}

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './weather.css';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import { CircularProgress, ThemeProvider } from '@material-ui/core';
-import TextField from '@material-ui/core/TextField';
+import { CircularProgress } from '@material-ui/core';
+
 import SearchIcon from '@material-ui/icons/Search';
 import ResultBody from './ResultBody';
 import WeatherAPI  from './weatherAPI'
@@ -16,7 +16,7 @@ function WeatherHome({ theme, mode }) {
 
     useEffect(() => {
         getWeatherData();
-    }, []);
+    },[]);
 
     const getWeatherData = () => {
         WeatherAPI.getCurrentWeatherData(city).then((response) => {
@@ -40,21 +40,20 @@ function WeatherHome({ theme, mode }) {
     return (
         <div>
             <Grid container className={`weather ${mode && "weather_mode"}`}>
-                <Grid item xs={12} sm={5} className={`weather_details ${mode && "weather_details_mode"}`}>
+                <Grid item xs={12} sm={4} className={`weather_details ${mode && "weather_details_mode"}`}>
                     <Typography variant="h4" gutterBottom>Projects</Typography> 
                     <div className="weather_paragraph">
                         <Typography variant="h5" gutterBottom>
                             Weather App
                         </Typography>
-                        <Typography variant="body2" gutterBottom>
-                            This is the weather app project that gives the correct information about current weather for each
-                            point on the globe. The default city is Kathmandu. User can input the city name in the input text field
+                        <Typography variant="body1" gutterBottom>
+                            This is the weather app that gives the information about current weather of major cities of the world.
+                            The default city is Kathmandu. User can input the city name in the input text field
                             and can get the current weather data.
-                            We can signup and request for API_KEY from <a href="https://openweathermap.org/" target="blank">openweathermap</a>.
                         </Typography>
                     </div>
                 </Grid>
-                <Grid item xs={12} sm={7} className={`weather_data ${mode && "weather_data_mode"}`}>
+                <Grid item xs={12} sm={8} className={`weather_data ${mode && "weather_data_mode"}`}>
                     <div className="input_search">
                         <form noValidate autoComplete="off">
                            
@@ -72,7 +71,7 @@ function WeatherHome({ theme, mode }) {
                     <div>
                         {isLoading ? <CircularProgress /> :
                             <div>
-                                <ResultBody data={weatherData} />
+                                <ResultBody data={weatherData} mode={mode} />
                             </div>
                         }
                     </div>

@@ -11,7 +11,7 @@
 .weather_details{
     padding-top: 20px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
     color: #000;
     text-align: left;
 }
@@ -83,7 +83,6 @@ a{
     outline: none;
     border: none;
     font-weight: 700;
-    border-radius: 0.2vw;
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 1rem;
@@ -103,14 +102,7 @@ a{
     color: #fff;
     outline: none;
     border: none;
-    font-weight: 700;
-    border-radius: 0.2vw;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 1rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    
+    font-weight: 700;   
 }
 
 .search_btn_mode:hover{
@@ -118,3 +110,4 @@ a{
     background-color: #cecece;
     color: #000;
 }
+

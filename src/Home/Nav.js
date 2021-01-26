@@ -27,14 +27,17 @@ function Nav({ handleChange, mode, theme }) {
       <ThemeProvider theme={theme}>
           <h1 className="title">Portfolio</h1>
         
-        { show ? 
+        {/*
+          { show ? 
           <div className="nav_menu">
             <button className={`nav_btn ${mode && "nav_btn_mode"}`}>Button1</button>
             <button className={`nav_btn ${mode && "nav_btn_mode"}`}>Button2</button>
             <button className={`nav_btn ${mode && "nav_btn_mode"}`}>Button3</button>
             </div>  
-          : ""
-        }
+            : ""
+          } 
+        */}
+        
         
         
           <FormControlLabel className={`selectmode ${mode && "selectmode_mode"}`}
