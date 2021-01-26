@@ -9,7 +9,7 @@ import WeatherHome from '../WeatherApp/WeatherHome';
 
 function HomePage() {
 
-    const theme = createMuiTheme({
+  const theme = createMuiTheme({
         palette: {
           primary: {
             main: '#000',
@@ -19,7 +19,7 @@ function HomePage() {
           },
         },
     });
-    
+   
   
     const [mode, setMode] = useState(true);
     
